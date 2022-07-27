@@ -14,7 +14,7 @@ for i in range(int(n)):
        url = "https://news.ycombinator.com/news?p=" + str(i)
     request = requests.get(url)
   except:
-    break
+    contine
   soup = BeautifulSoup(request.text, "html.parser")
 
   teme = soup.find_all("td", class_="title")
